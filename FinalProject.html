@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orchid 🌸</title>
+    <style>
+      body {
+        background-image: linear-gradient(to top, #defcf9 0%, #cadefc 100%);
+        width: 50%;
+        color: #362391;
+        margin: 60px auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        color: #9771f4;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #9771f4;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 5px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #9771f4;
+        color: white;
+        font-size: 24px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        color: #9771f4;
+        text-decoration: none;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .sign {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>The orchid flower</h1>
+      <h2>One of the most beautiful decorative flowers</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/249/original/Orchid.jpeg?1664625264"
+        alt="Orchid"
+        width="400"
+      />
+      <p>
+        Orchids are plants that belong to the family Orchidaceae
+        (/ɔːrkəˈdeɪʃiː/), a diverse and widespread group of flowering plants
+        with blooms that are often colourful and fragrant.
+      </p>
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Orchid"
+        target="_blank"
+        class="learn-more"
+      >
+        👉🏼 Learn more on Wikipedia
+      </a>
+      <button class="buy-button">🌸 Buy orchid 🌸</button>
+      <p class="sign">This page was built by Mariola Bednarska</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite emoji?");
+
+        alert("Thank you, " + name + "! We'll be in touch by email " + emoji);
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
